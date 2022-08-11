@@ -1,10 +1,9 @@
 {
     "name": "@voiids/marketplace",
-    "version": "1.0.5",
+    "version": "0.0.1",
     "description": "",
-    "main": "index.js",
     "scripts": {
-        "test": "exit 0"
+        "rollup": "rollup -c"
     },
     "repository": {
         "type": "git",
@@ -13,10 +12,27 @@
     "publishConfig": {
         "@voiids:registry": "https://npm.pkg.github.com"
     },
-    "author": "",
+    "author": "Jbara Moncif",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/voiids/marketplace/issues"
     },
-    "homepage": "https://github.com/voiids/marketplace#readme"
+    "homepage": "https://github.com/voiids/marketplace#readme",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^22.0.2",
+        "@rollup/plugin-node-resolve": "^13.3.0",
+        "@rollup/plugin-typescript": "^8.3.4",
+        "@types/react": "^18.0.17",
+        "react": "^17.0.2",
+        "rollup": "^2.77.3",
+        "rollup-plugin-dts": "^4.2.2",
+        "tslib": "^2.4.0",
+        "typescript": "^4.7.4"
+    }
 }
